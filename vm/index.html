@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Virtual Machine - umasds</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> umasds</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="..">Home</a>
+                
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 current">
+                <a class="current" href="./">Virtual Machine</a>
+                
+                    <ul>
+                    
+                        <li class="toctree-l3"><a href="#the-social-data-science-vm">The Social Data Science VM</a></li>
+                        
+                            <li><a class="toctree-l4" href="#installation-and-setup">Installation and setup</a></li>
+                        
+                    
+                    </ul>
+                
+            </li>
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">umasds</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+    <li>Virtual Machine</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="https://github.com/umasds/" class="icon icon-github"> Edit on GitHub</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <p>Social Data Science @ University of Mannheim</p>
+<p><img alt="Social Data Science" src="../img/sds.png" /></p>
+<h1 id="the-social-data-science-vm">The Social Data Science VM</h1>
+<p>An easy to use virtual machine (VM) for teaching data science in the 
+social sciences</p>
+<hr />
+<h2 id="installation-and-setup"><strong>Installation and setup</strong></h2>
+<p>We tried to keep the installation process as simple as possible. You 
+just need to follow these easy steps:</p>
+<hr />
+<h3 id="1-install-necessary-tools">1. Install necessary tools</h3>
+<p>You first need to install install 
+<a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> and 
+<a href="https://www.vagrantup.com/downloads.html">Vagrant</a> in order to setup 
+and run the VM.</p>
+<hr />
+<h3 id="2-prepare-the-vm">2. Prepare the VM</h3>
+<h4 id="start-terminal">Start terminal</h4>
+<p>Preparing the VM requires to use the command line in a terminal window. 
+This is a lot easier than it sound. To start a terminal you do the 
+following:</p>
+<ul>
+<li><em>Ubuntu Linux</em>: Press <em>command/Windows/Apple key</em> &gt; type <code>terminal</code> 
+    &gt; hit <em>enter</em></li>
+<li><em>MacOS X</em>: Press <em>command/Windows/Apple key</em> + <em>space</em> &gt; type 
+    <code>Terminal</code> &gt; double click <em>Terminal</em> in the results</li>
+<li><em>Windows</em>: Press <em>command/Windows/Apple key</em> &gt; type <code>cmd</code> &gt; hit 
+    <em>enter</em></li>
+</ul>
+<h4 id="create-new-directory">Create new directory</h4>
+<p>Now you need to create a new directory and navigate to it by typing the 
+following commands into the terminal and hitting <em>enter</em> after each
+line:</p>
+<p><em>Ubuntu Linux</em> and <em>MacOS X</em>: </p>
+<pre><code>mkdir ~/umasds-vm
+cd ~/umasds-vm
+</code></pre>
+
+<p><em>Windows</em>: </p>
+<pre><code>mkdir %HOMEPATH%/umasds-vm
+cd %HOMEPATH%/umasds-vm
+</code></pre>
+
+<h4 id="initialize-the-vm">Initialize the VM</h4>
+<p>As the last step of the setup you have to initialize the VM and tell the
+tools where to find the VM image file (called a <em>box</em>):</p>
+<p><em>all operating systems</em>: </p>
+<pre><code>vagrant init http://bethm.de/umasds-vm/umasds-vm.box
+</code></pre>
+
+<hr />
+<h3 id="3-download-and-run-the-vm-for-the-first-time">3. Download and run the VM for the first time</h3>
+<p>The following step will take a considerable amount of time depending on
+the speed of your internet connection. To download and start up the VM 
+you need to enter the following:</p>
+<p><em>all operating systems</em>: </p>
+<pre><code>vagrant up
+</code></pre>
+
+<p>After a while the <strong>Social Data Science</strong> desktop should come up and you 
+can start crunching data!</p>
+<hr />
+<h3 id="4-starting-the-vm">4. Starting the VM</h3>
+<p>You can always start the VM by opening a <em>terminal</em>, changing to the 
+<code>umasds-vm</code> directory and starting <code>vagrant up</code> manually, but if you 
+want a more convenient way you can easily set up a shortcut on the 
+desktop:</p>
+<p><em>all operating systems</em>:</p>
+<ul>
+<li>Start the <em>Oracle VM VirtualBox Manager</em> - much like you started the 
+    terminal above, just type in <code>oracle</code> instead</li>
+<li>Do a right click on <em>umasds-vm</em> &gt; click left on <em>Create Shortcut on 
+    Desktop</em></li>
+</ul>
+<p>... et voilà! Anytime you want to start the VM now you just need to 
+double click on the <em>umasds-vm</em> icon (blue cube saying "vbox") on the 
+desktop.</p>
+<hr />
+<h3 id="5-stopping-the-vm">5. Stopping the VM</h3>
+<p>To stop the VM all you have to to is click on the shutdown icon (red 
+square with white circle) in the lower right corner &gt; click on <em>Shut 
+down</em>.</p>
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+            <a href="https://github.com/umasds/" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+        
+      <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+
+<!--
+MkDocs version  : 0.12.2
+Docs Build Date : 2015-05-16 07:57:09.560604
+-->
+</body>
+</html>
