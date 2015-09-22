@@ -1,0 +1,64 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "What is social data science?\n\n\nMuch like \ndata science\n\nas the more general term \nsocial data science\n has no clear definition \neither. In the context of this website it is mainly the title of a \n\ncourse on applications of data science methods in quantitative social research\n.\n\n\n\n\nTeaching data science skills\n\n\nStudents of social sciences acquire a lot of substantive expertise\nin several subjects like sociology, psychology, politics, economics etc.\nThey also learn mathematics and statistics as part of their research \nmethods training. What the social scienitific curriculum is missing in \nmost cases are hacking skills which are needed to become a full-blown \nsocial data scientist.\n\n\n\n\n\"The Data Science Venn Diagramm\"\n\n by \nDrew Conway\n is licensed under \n \nCC BY-NC 3.0\n\n\nOne of our course goals is therefore to provide the students with the \nnecessary technical skills to apply data science techniques to social\nresearch questions. Since we cannot expect a strong computer science \nbackground or affinity, we try to introduce concepts like coding, \nversion control etc. as gently as possible. At the same time we want to \nprovide at least a minimal skill set in handling state of the art data \nscience tools. \n\n\nInstalling the necessary programs and getting them to run properly on \neach computer can be a time consuming and frustrating process especially \nfor the less tech savvy. We therefore provide a \n\nvirtual machine\n running a completely prepared, easy-to-use \n\nUbuntu Linux\n desktop with all tools \nthat are covered in the course already pre-installed. Of course all \nprograms used are \nfree software\n and most are under \nan \nopen source\n licence.\n\n\n\n\nData science applications in social research\n\n\nApart from learning the technical skills the main focus of our course is\nthe application of data science techniques to social research questions.\nIn order to do that the students will get an introduction to different\nmachine learning concepts. We will first cover basic classification \nalgorithms like naive bayes and decision trees. Together we will then \nexplore how these can be applied to problems of prediction and \nexplanation of social phenomena.\n\n\nThe substantive part of the course will start with students developing \na research question in one of the areas of family, education or labour market\nresearch. After that we will discuss - and finally decide on - datasets \nto be used to address the specific research questions. The main task for\nthe rest of the course is then to discuss and develop the application of \nthe data science methods the students have just learned to their own \nresearch question.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#what-is-social-data-science", 
+            "text": "Much like  data science \nas the more general term  social data science  has no clear definition \neither. In the context of this website it is mainly the title of a  course on applications of data science methods in quantitative social research .", 
+            "title": "What is social data science?"
+        }, 
+        {
+            "location": "/#teaching-data-science-skills", 
+            "text": "Students of social sciences acquire a lot of substantive expertise\nin several subjects like sociology, psychology, politics, economics etc.\nThey also learn mathematics and statistics as part of their research \nmethods training. What the social scienitific curriculum is missing in \nmost cases are hacking skills which are needed to become a full-blown \nsocial data scientist.   \"The Data Science Venn Diagramm\" \n by  Drew Conway  is licensed under \n  CC BY-NC 3.0  One of our course goals is therefore to provide the students with the \nnecessary technical skills to apply data science techniques to social\nresearch questions. Since we cannot expect a strong computer science \nbackground or affinity, we try to introduce concepts like coding, \nversion control etc. as gently as possible. At the same time we want to \nprovide at least a minimal skill set in handling state of the art data \nscience tools.   Installing the necessary programs and getting them to run properly on \neach computer can be a time consuming and frustrating process especially \nfor the less tech savvy. We therefore provide a  virtual machine  running a completely prepared, easy-to-use  Ubuntu Linux  desktop with all tools \nthat are covered in the course already pre-installed. Of course all \nprograms used are  free software  and most are under \nan  open source  licence.", 
+            "title": "Teaching data science skills"
+        }, 
+        {
+            "location": "/#data-science-applications-in-social-research", 
+            "text": "Apart from learning the technical skills the main focus of our course is\nthe application of data science techniques to social research questions.\nIn order to do that the students will get an introduction to different\nmachine learning concepts. We will first cover basic classification \nalgorithms like naive bayes and decision trees. Together we will then \nexplore how these can be applied to problems of prediction and \nexplanation of social phenomena.  The substantive part of the course will start with students developing \na research question in one of the areas of family, education or labour market\nresearch. After that we will discuss - and finally decide on - datasets \nto be used to address the specific research questions. The main task for\nthe rest of the course is then to discuss and develop the application of \nthe data science methods the students have just learned to their own \nresearch question.", 
+            "title": "Data science applications in social research"
+        }, 
+        {
+            "location": "/vm/", 
+            "text": "The Social Data Science VM\n\n\nAn easy to use virtual machine (VM) for teaching data science in the \nsocial sciences\n\n\n\n\nInstallation and setup\n\n\nWe tried to keep the installation process as simple as possible. You \njust need to follow these easy steps:\n\n\n\n\n1. Install necessary tools\n\n\nYou first need to install install \n\nVirtualBox\n and \n\nVagrant\n in order to setup \nand run the VM.\n\n\n\n\n2. Prepare the VM\n\n\nStart terminal\n\n\nPreparing the VM requires to use the command line in a terminal window. \nThis is a lot easier than it sound. To start a terminal you do the \nfollowing:\n\n\n\n\nUbuntu Linux\n: Press \ncommand/Windows/Apple key\n \n type \nterminal\n \n    \n hit \nenter\n\n\nMacOS X\n: Press \ncommand/Windows/Apple key\n + \nspace\n \n type \n    \nTerminal\n \n double click \nTerminal\n in the results\n\n\nWindows\n: Press \ncommand/Windows/Apple key\n \n type \ncmd\n \n hit \n    \nenter\n\n\n\n\nCreate new directory\n\n\nNow you need to create a new directory and navigate to it by typing the \nfollowing commands into the terminal and hitting \nenter\n after each\nline:\n\n\nUbuntu Linux\n and \nMacOS X\n: \n\n\nmkdir ~/umasds-vm\ncd ~/umasds-vm\n\n\n\n\nWindows\n: \n\n\nmkdir %HOMEPATH%\\umasds-vm\ncd %HOMEPATH%\\umasds-vm\n\n\n\n\nInitialize the VM\n\n\nAs the last step of the setup you have to initialize the VM and tell the\ntools where to find the VM image file (called a \nbox\n):\n\n\nall operating systems\n: \n\n\nvagrant init http://bethm.de/umasds-vm/umasds-vm.box\n\n\n\n\n\n\n3. Download and run the VM for the first time\n\n\nThe following step will take a considerable amount of time depending on\nthe speed of your internet connection. To download and start up the VM \nyou need to enter the following:\n\n\nall operating systems\n: \n\n\nvagrant up\n\n\n\n\nAfter a while your social data science desktop should come up and you \ncan start crunching data!\n\n\n\n\n4. Starting the VM\n\n\nYou can always start the VM by opening a \nterminal\n, changing to the \n\numasds-vm\n directory and starting \nvagrant up\n manually, but if you \nwant a more convenient way you can easily set up a shortcut on the \ndesktop:\n\n\nall operating systems\n:\n\n\n\n\nStart the \nOracle VM VirtualBox Manager\n - much like you started the \n    terminal above, just type in \noracle\n instead\n\n\nDo a right click on \numasds-vm\n \n click left on \nCreate Shortcut on \n    Desktop\n\n\n\n\n... et voil\u00e0! Anytime you want to start the VM now you just need to \ndouble click on the \numasds-vm\n icon (blue cube saying \"vbox\") on the \ndesktop.\n\n\n\n\n5. Stopping the VM\n\n\nTo stop the VM all you have to to is click on the shutdown icon (red \nsquare with white circle) in the lower right corner \n click on \nShut \ndown\n.", 
+            "title": "Virtual Machine"
+        }, 
+        {
+            "location": "/vm/#the-social-data-science-vm", 
+            "text": "An easy to use virtual machine (VM) for teaching data science in the \nsocial sciences", 
+            "title": "The Social Data Science VM"
+        }, 
+        {
+            "location": "/vm/#installation-and-setup", 
+            "text": "We tried to keep the installation process as simple as possible. You \njust need to follow these easy steps:   1. Install necessary tools  You first need to install install  VirtualBox  and  Vagrant  in order to setup \nand run the VM.   2. Prepare the VM  Start terminal  Preparing the VM requires to use the command line in a terminal window. \nThis is a lot easier than it sound. To start a terminal you do the \nfollowing:   Ubuntu Linux : Press  command/Windows/Apple key    type  terminal  \n      hit  enter  MacOS X : Press  command/Windows/Apple key  +  space    type \n     Terminal    double click  Terminal  in the results  Windows : Press  command/Windows/Apple key    type  cmd    hit \n     enter   Create new directory  Now you need to create a new directory and navigate to it by typing the \nfollowing commands into the terminal and hitting  enter  after each\nline:  Ubuntu Linux  and  MacOS X :   mkdir ~/umasds-vm\ncd ~/umasds-vm  Windows :   mkdir %HOMEPATH%\\umasds-vm\ncd %HOMEPATH%\\umasds-vm  Initialize the VM  As the last step of the setup you have to initialize the VM and tell the\ntools where to find the VM image file (called a  box ):  all operating systems :   vagrant init http://bethm.de/umasds-vm/umasds-vm.box   3. Download and run the VM for the first time  The following step will take a considerable amount of time depending on\nthe speed of your internet connection. To download and start up the VM \nyou need to enter the following:  all operating systems :   vagrant up  After a while your social data science desktop should come up and you \ncan start crunching data!   4. Starting the VM  You can always start the VM by opening a  terminal , changing to the  umasds-vm  directory and starting  vagrant up  manually, but if you \nwant a more convenient way you can easily set up a shortcut on the \ndesktop:  all operating systems :   Start the  Oracle VM VirtualBox Manager  - much like you started the \n    terminal above, just type in  oracle  instead  Do a right click on  umasds-vm    click left on  Create Shortcut on \n    Desktop   ... et voil\u00e0! Anytime you want to start the VM now you just need to \ndouble click on the  umasds-vm  icon (blue cube saying \"vbox\") on the \ndesktop.   5. Stopping the VM  To stop the VM all you have to to is click on the shutdown icon (red \nsquare with white circle) in the lower right corner   click on  Shut \ndown .", 
+            "title": "Installation and setup"
+        }, 
+        {
+            "location": "/res/", 
+            "text": "Version Control\n\n\n\n\nGit\n a very popular tool for version control and \n  collaboration\n\n\nGitHub\n and \nGitLab\n websites hosting Git repositories \n  and providing additional tools for collaboration\n\n\nTry Git\n short introduction to basic Git usage\n\n\nGit Guide\n \nvery\n \n  short git tutorial (German)\n\n\n\n\nLaTeX\n\n\nR and RStudio\n\n\nMachine Learning", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/res/#version-control", 
+            "text": "Git  a very popular tool for version control and \n  collaboration  GitHub  and  GitLab  websites hosting Git repositories \n  and providing additional tools for collaboration  Try Git  short introduction to basic Git usage  Git Guide   very  \n  short git tutorial (German)", 
+            "title": "Version Control"
+        }, 
+        {
+            "location": "/res/#latex", 
+            "text": "", 
+            "title": "LaTeX"
+        }, 
+        {
+            "location": "/res/#r-and-rstudio", 
+            "text": "", 
+            "title": "R and RStudio"
+        }, 
+        {
+            "location": "/res/#machine-learning", 
+            "text": "", 
+            "title": "Machine Learning"
+        }
+    ]
+}
