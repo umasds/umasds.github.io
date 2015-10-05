@@ -42,7 +42,7 @@
         }, 
         {
             "location": "/res/", 
-            "text": "Version Control\n\n\n\n\nGit\n a very popular tool for version control and \n  collaboration\n\n\nGitHub\n and \nGitLab\n websites hosting Git repositories \n  and providing additional tools for collaboration\n\n\nTry Git\n short introduction to basic Git usage\n\n\nGit Guide\n \nvery\n \n  short git tutorial (German)\n\n\n\n\nLaTeX\n\n\nR and RStudio\n\n\nMachine Learning", 
+            "text": "Version Control\n\n\n\n\nGit\n a very popular tool for version control and \n  collaboration\n\n\nGitHub\n and \nGitLab\n websites hosting Git repositories \n  and providing additional tools for collaboration\n\n\nTry Git\n short introduction to basic Git usage\n\n\nGit Guide\n \nvery\n \n  short git tutorial (German)\n\n\n\n\nLaTeX\n\n\n\n\nLaTeX for Term Papers - in 90 minutes\n slides used in the course (German)\n\n\nKOMA-Script\n extensive documentation for the popular KOMA-Script package (German)\n\n\nl2kurz\n short introduction to LaTeX (German)\n\n\n\n\nR and RStudio\n\n\nMachine Learning\n\n\nDatasets\n\n\n\n\nGerman General Social Survey (ALLBUS)\n biennial cross-sectional survey of the German population focusing on attitudes, behaviour and social structure\n\n\nPanel Study \"Labour Market and Social Security\" Campus File (PASS-CF)\n annual panel survey on households and individuals oversampling welfare benefits recipients\n\n\nSample of Integrated Labour Market Biographies Campus File (SIAB-CF)\n anonymized sample of administrative records on indivual labour market biographies", 
             "title": "Resources"
         }, 
         {
@@ -52,7 +52,7 @@
         }, 
         {
             "location": "/res/#latex", 
-            "text": "", 
+            "text": "LaTeX for Term Papers - in 90 minutes  slides used in the course (German)  KOMA-Script  extensive documentation for the popular KOMA-Script package (German)  l2kurz  short introduction to LaTeX (German)", 
             "title": "LaTeX"
         }, 
         {
@@ -64,6 +64,11 @@
             "location": "/res/#machine-learning", 
             "text": "", 
             "title": "Machine Learning"
+        }, 
+        {
+            "location": "/res/#datasets", 
+            "text": "German General Social Survey (ALLBUS)  biennial cross-sectional survey of the German population focusing on attitudes, behaviour and social structure  Panel Study \"Labour Market and Social Security\" Campus File (PASS-CF)  annual panel survey on households and individuals oversampling welfare benefits recipients  Sample of Integrated Labour Market Biographies Campus File (SIAB-CF)  anonymized sample of administrative records on indivual labour market biographies", 
+            "title": "Datasets"
         }
     ]
 }
